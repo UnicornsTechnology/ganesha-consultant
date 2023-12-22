@@ -65,7 +65,7 @@
 
     <header class="header-area style-1">
         <div class="header-main-logo d-lg-block d-none">
-            <a href="/"><img alt="image" src="{{ asset('logo.jpg') }}" width="200px" height="100px"></a>
+            <a href="/"><img alt="image" src="{{ asset('logo.png') }}" width="200px" height="50px"></a>
         </div>
         <div class="menu-topbar-area">
             <div class="top-bar">
@@ -88,13 +88,13 @@
             </div>
             <div class="menu-area">
                 <div class="header-logo">
-                    <a href="/"><img alt="image" class="img-fluid" src="{{ asset('logo.jpg') }}"
+                    <a href="/"><img alt="image" class="img-fluid" src="{{ asset('logo.png') }}"
                             width="200px" height="80px"></a>
                 </div>
                 <div class="main-menu">
                     <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
                         <div class="mobile-logo-wrap">
-                            <a href="/"><img alt="image" src="{{ asset('logo.jpg') }}"></a>
+                            <a href="/"><img alt="image" src="{{ asset('logo.png') }}"></a>
                         </div>
                         <div class="menu-close-btn">
                             <i class="bi bi-x-lg"></i>
@@ -272,7 +272,7 @@
         <div class="container">
             <div class="footer-btm">
                 <div class="footer-logo">
-                    <img src="{{ asset('logo.jpg') }}" width="150px" height="100px" alt>
+                    <img src="{{ asset('logo.png') }}" width="150px" height="100px" alt>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">

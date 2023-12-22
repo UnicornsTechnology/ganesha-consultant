@@ -102,7 +102,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class=" mt-3 pb-3 mb-3 ">
                     <div class="image">
-                        <img src="{{ asset('logo.jpg') }}" alt="User Image" height="80px" width="230px">
+                            <img src="{{ asset('logo.png') }}" alt="User Image" height="80px" width="230px">
                     </div>
 
                 </div>
