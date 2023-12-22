@@ -77,7 +77,7 @@
                         <div class="parent-icon">
                             <span class="material-symbols-outlined">home</span>
                         </div>
-                        <div class="menu-title">Inquiries</div>
+                        <div class="menu-title">Career At GC</div>
                     </a>
                 </li>
                 <li>
@@ -85,7 +85,7 @@
                         <div class="parent-icon">
                             <span class="material-symbols-outlined">home</span>
                         </div>
-                        <div class="menu-title">Image Gallery</div>
+                        <div class="menu-title">Job Provider</div>
                     </a>
                 </li>
                 <li>
@@ -93,33 +93,10 @@
                         <div class="parent-icon">
                             <span class="material-symbols-outlined">home</span>
                         </div>
-                        <div class="menu-title">Banner</div>
+                        <div class="menu-title">Job Seeker</div>
                     </a>
                 </li>
-                <li>
-                    <a href="/admin/trusted-couples/list">
-                        <div class="parent-icon">
-                            <span class="material-symbols-outlined">home</span>
-                        </div>
-                        <div class="menu-title">Trusted Couples</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/success-story/list">
-                        <div class="parent-icon">
-                            <span class="material-symbols-outlined">home</span>
-                        </div>
-                        <div class="menu-title">Success Story</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/team/list">
-                        <div class="parent-icon">
-                            <span class="material-symbols-outlined">home</span>
-                        </div>
-                        <div class="menu-title">Teams</div>
-                    </a>
-                </li>
+
             </ul>
             <!--end navigation-->
         </div>
