@@ -65,7 +65,7 @@
 
     <header class="header-area style-1">
         <div class="header-main-logo d-lg-block d-none">
-            <a href="/"><img alt="image" src="{{ asset('logo.png') }}" width="200px" height="50px"></a>
+            <a href="/"><img alt="image" src="{{ asset('logo.png') }}" width="200px" height="100px"></a>
         </div>
         <div class="menu-topbar-area">
             <div class="top-bar">
@@ -103,9 +103,9 @@
                     <ul class="menu-list">
                         <li><a href="/">Home</a></li>
                         <li><a href="/jobs-list">Find Jobs</a></li>
-                        {{-- <li><a href="/packages">Pricing Plan</a></li> --}}
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/blog">Career At GC</a></li>
+                        <li><a href="/about-us">Job Provider</a></li>
+                        <li><a href="/about-us">Job Seeker</a></li>
                         <li><a href="/contact-us">Contact Us</a></li>
                     </ul>
                     <div class="for-mobile-menu d-lg-none d-block">
