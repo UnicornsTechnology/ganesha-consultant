@@ -43,13 +43,13 @@
                     <div class="col-lg-7 d-flex align-items-center">
                         <div class="hero-content">
                             <h1>To Choose Your Level Best <span>Dream Career.</span></h1>
-                            <p><span>2400</span> Peoples are daily search in this portal, <span>100</span> user added job
-                                portal!</p>
+                            <p><span>2400</span> Peoples are daily search in this consultant, <span>100</span> user added
+                                Ganesha consultant!</p>
                             <div class="job-search-area">
                                 <form method="get" action="/job/search/list">
                                     <div class="form-inner job-title">
                                         <input type="text" name="key" placeholder="Job title, keywords"
-                                        list="job-options">
+                                            list="job-options">
                                     </div>
                                     <datalist id="job-options">
                                         @foreach ($recentlyAdded as $item)
@@ -58,15 +58,16 @@
                                     </datalist>
                                     <div class="form-inner category">
                                         <select class="select1" name="location">
-                                        <option>Select Location</option>
-                                        @foreach ($cities as $item)
-                                            <option>{{ $item->location_name }}</option>
-                                        @endforeach
+                                            <option>Select Location</option>
+                                            @foreach ($cities as $item)
+                                                <option>{{ $item->location_name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="form-inner">
                                         <button type="submit" class="primry-btn-2 "><img
-                                                src="{{ asset('front_assets/images/icon/search-icon.svg')}}" alt> Search</button>
+                                                src="{{ asset('front_assets/images/icon/search-icon.svg') }}" alt>
+                                            Search</button>
                                     </div>
                                 </form>
                             </div>
@@ -86,15 +87,18 @@
                         <div class="banner-image-area">
                             <div class="banner-img-left">
                                 <div class="banner-img1">
-                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-01.png') }}" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-01.png') }}"
+                                        alt>
                                 </div>
                                 <div class="banner-img2">
-                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-02.png') }}" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-02.png') }}"
+                                        alt>
                                 </div>
                             </div>
                             <div class="banner-img-center">
                                 <div class="banner-img3">
-                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-03.png') }}" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-03.png') }}"
+                                        alt>
                                 </div>
                                 <div class="banner-img4">
                                     <div class="user-area">
@@ -120,7 +124,8 @@
                                     </div>
                                 </div>
                                 <div class="banner-img6">
-                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-04.png') }}" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-04.png') }}"
+                                        alt>
                                 </div>
                             </div>
                         </div>
@@ -1174,8 +1179,30 @@
             </div>
         </div>
     </div>
-
-
+    <div class="home2-category-area mb-120">
+        <div class="container">
+        <div class="row mb-60">
+        <div class="col-12 d-flex justify-content-center gap-3">
+        <div class="section-title1 text-center">
+        <h2>Trending Jobs <span>Category</span></h2>
+        <p>To choose your trending job dream & to make future bright.</p>
+        </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="single-category2">
+            <div class="category-icon">
+            <div class="icon-bg">
+        <div class="category-content">
+            <h5><a href="job-listing1.html">Electrician/Repair</a></h5>
+            <p>Job Available: <span>88</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+</div>
     <div class="home1-featured-area mb-120">
         <div class="container">
             <div class="row mb-60">
@@ -1293,242 +1320,94 @@
             </div>
         </div>
     </div>
-
-    <div class="home1-work-process mb-120">
+    <div class="home2-talent-area mb-120">
         <div class="container">
-            <div class="row mb-60">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="section-title1 text-center">
-                        <h2>JOBS Working <span>Process</span></h2>
-                        <p>To choose your trending job dream & to make future bright.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-lg-4 gy-5 justify-content-center">
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="single-work-process one text-center">
-                        <div class="icon">
-                            <img src="{{ asset('front_assets/images/icon/account-create.svg') }}" alt>
-                        </div>
-                        <div class="work-content">
-                            <h5><a href="/student/register">Account Create</a></h5>
-                            <p>To create your account be confident & safely.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="single-work-process two text-center">
-                        <div class="icon">
-                            <img src="{{ asset('front_assets/images/icon/job-find.svg') }}" alt>
-                        </div>
-                        <div class="work-content">
-                            <h5><a href="/jobs-list">Find Jobs </a></h5>
-                            <p>TSimple and Stress-Free" We simplify form filling for you with our user-friendly platform.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-sm-6">
-                    <div class="single-work-process one text-center">
-                        <div class="icon">
-                            <img src="{{ asset('front_assets/images/icon/job-apply.svg') }}" alt>
-                        </div>
-                        <div class="work-content">
-                            <h5><a href="/jobs-list">Apply Jobs</a></h5>
-                            <p>Match Made in Heaven" Find your dream job with ease using our job fit scoring system.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="row">
+        <div class="col-lg-12">
+        <div class="talent-wrap">
+        <div class="talent-content">
+        <h4>Are You Looking For A <span>Dream Job?</span></h4>
+        <p>2400+ candidates are available for your company.</p>
         </div>
-    </div>
-
-    <div class="home1-featured-area mb-120">
+        <div class="talent-img">
+        <img class="img-fluid" src="{{ asset('front_assets/images/bg/home-talent-img.png')}}" alt>
+        </div>
+        <div class="find-btn">
+        <a class="primry-btn-2 lg-btn" href="job-listing1.html">Find Now</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="home2-working-process mb-120">
         <div class="container">
-            <div class="row mb-60">
-                <div
-                    class="col-12 d-flex flex-wrap align-items-end justify-content-md-between justify-content-start gap-3">
-                    <div class="section-title1">
-                        <h2>Portal <span>Recent</span> Article</h2>
-                        <p>To choose your trending job dream & to make future bright.</p>
-                    </div>
-                    <div class="explore-btn">
-                        <a href="/jobs-list">Explore More <span><img
-                                    src="{{ asset('front_assets/images/icon/explore-elliose.svg') }}" alt></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                @foreach ($recentlyAdded as $item)
-                    <div class="col-xl-4 col-lg-6">
-                        <div class="feature-card shadow">
-                            <div class="company-area">
-                                <div class="logo">
-                                    {{-- @if ($item->company_logo)
-                                        <img src="{{ asset('uploads/company_logo/' . $item->company_logo) }}"
-                                            alt="">
-                                    @else
-                                        <img src="{{ asset('front_assets/images/bg/company-logo/company-01.png') }}" alt>
-                                    @endif --}}
-                                </div>
-                                <div class="company-details">
-                                    <div class="name-location">
-                                        <h5>
-                                            @auth
-                                                <a
-                                                    href="/job-details/{{ $item->job_title_slug }}/{{ $item->job_id }}">{{ $item->job_title_name }}</a>
-                                            @else
-                                                <a href="/student/login">{{ $item->job_title_name }}</a>
-                                            @endauth
-                                        </h5>
-                                        <p>{{ $item->experiences_name }} , {{ $item->job_type_name }} </p>
-                                    </div>
-                                    <div class="bookmark">
-                                        @auth
-                                            <a href="/student/add/bookmark/{{ $item->job_id }}" class="bookmark-btn"><i
-                                                    class="bi bi-bookmark"></i></a>
-                                        @else
-                                            <a href="/student/login" class="bookmark-btn"><i class="bi bi-bookmark"></i></a>
-                                        @endauth
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-discription">
-                                <ul>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p>
-                                            <span class="title">Company:</span>
-                                            {{ \Illuminate\Support\Str::limit($item->company_name, $limit = 18, $end = '...') }}
-
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p>
-                                            <span class="title">Salary:</span> {{ $item->job_package }} /-
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p><span class="title">Location:</span> <span> {{ $item->location_name }}</span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p><span class="title">Deadline:</span> <span>
-                                                {{ ago($item->job_posting_date) }}</span></p>
-                                    </li>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p><span class="title">Experience:</span> <span>
-                                                {{ $item->experiences_name }}</span></p>
-                                    </li>
-                                    <li>
-                                        <img src="{{ asset('front_assets/images/icon/arrow2.svg') }}" alt>
-                                        <p><span class="title">Job Type:</span> <span>
-                                                {{ $item->job_type_name }}</span></p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="job-type-apply">
-                                @auth
-                                    <div class="apply-btn">
-                                        <a href="/job-details/{{ $item->job_title_slug }}/{{ $item->job_id }}"><span><img
-                                                    src="{{ asset('front_assets/images/icon/apply-ellipse.svg') }}"
-                                                    alt></span>Apply Now</a>
-                                    </div>
-                                    <div class="apply-btn">
-                                        <a href="/job-details/{{ $item->job_title_slug }}/{{ $item->job_id }}"><span><img
-                                                    src="{{ asset('front_assets/images/icon/apply-ellipse.svg') }}"
-                                                    alt></span>Apply Now</a>
-                                    </div>
-                                @else
-                                    <div class="apply-btn">
-                                        <a href="/student/login"><span><img
-                                                    src="{{ asset('front_assets/images/icon/apply-ellipse.svg') }}"
-                                                    alt></span>Apply Now</a>
-                                    </div>
-                                    <div class="apply-btn">
-                                        <a href="/student/login"><span><img
-                                                    src="{{ asset('front_assets/images/icon/apply-ellipse.svg') }}"
-                                                    alt></span>Apply Now</a>
-                                    </div>
-                                @endauth
-
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-            <div class="col-lg-12 d-flex justify-content-center pt-20">
-                <div class="pagination-area">
-                    {{ $recentlyAdded->onEachSide(-1)->links() }}
-                </div>
-            </div>
+        <div class="row mb-60">
+        <div class="col-12 d-flex justify-content-center">
+        <div class="section-title1 text-center">
+        <h2>JOBES Working <span>Process</span></h2>
+        <p>To choose your trending job dream &amp; to make future bright.</p>
         </div>
-    </div>
-
-
-
-    <div class="home1-review-area mb-120">
-        <div class="container">
-            <div class="row mb-60">
-                <div
-                    class="col-12 d-flex flex-wrap align-items-end justify-content-md-between justify-content-start gap-3">
-                    <div class="section-title1">
-                        <h2>Trusted User <span>Reviews</span></h2>
-                        <p>To choose your trending job dream & to make future bright.</p>
-                    </div>
-                    <div class="swiper-btn1 d-flex align-items-center">
-                        <div class="left-btn prev-2">
-                            <img src="{{ asset('front_assets/images/icon/explore-elliose.svg') }}" alt>
-                        </div>
-                        <div class="right-btn next-2">
-                            <img src="{{ asset('front_assets/images/icon/explore-elliose.svg') }}" alt>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="swiper testimonial-slider1">
-                    <div class="swiper-wrapper">
-                        @foreach ($emp as $item)
-                            <div class="swiper-slide">
-                                <div class="testimonial-card">
-                                    <div class="author-img">
-                                        <img src="{{ asset('uploads/employee_images/' . $item->emp_img) }}" alt>
-                                        <div class="quat-icon">
-                                            <img src="{{ asset('front_assets/images/icon/quat-icon.svg') }}" alt>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-content">
-                                        <div class="author-review-area">
-                                            <div class="author-area">
-                                                <h5>{{ $item->emp_name }}</h5>
-                                                <span>{{ $item->working_potion }}</span>
-                                            </div>
-                                            <ul>
-                                                <li><i class="bi bi-star-fill"></i></li>
-                                                <li><i class="bi bi-star-fill"></i></li>
-                                                <li><i class="bi bi-star-fill"></i></li>
-                                                <li><i class="bi bi-star-fill"></i></li>
-                                                <li><i class="bi bi-star-half"></i></li>
-                                            </ul>
-                                        </div>
-                                        <p>{!! \Illuminate\Support\Str::limit($item->description, $limit = 100, $end = '...') !!}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
+        </div>
+        <div class="row gy-5 justify-content-center">
+        <div class="col-lg-3 col-sm-6">
+        <div class="working-process-card2">
+        <div class="working-process-sl">
+        <h4>01</h4>
+        <span></span>
+        </div>
+        <div class="working-process-content">
+        <h5><a href="register.html">Account Create</a></h5>
+        <p>To create your account be confident & safely.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+        <div class="working-process-card2">
+        <div class="working-process-sl">
+        <h4>02</h4>
+        <span></span>
+        </div>
+        <div class="working-process-content">
+        <h5><a href="edit-profile.html">Create Resume</a></h5>
+        <p>To create your account be confident & safely.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+        <div class="working-process-card2">
+        <div class="working-process-sl">
+        <h4>03</h4>
+        <span></span>
+        </div>
+        <div class="working-process-content">
+        <h5><a href="job-listing1.html">Find Jobs</a></h5>
+        <p>To create your account be confident & safely.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+        <div class="working-process-card2">
+        <div class="working-process-sl last">
+        <h4>04</h4>
+        <span></span>
+        </div>
+        <div class="working-process-content">
+        <h5><a href="job-listing1.html">Apply Jobs</a></h5>
+        <p>To create your account be confident & safely.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+   
+
+
+
+   
 
 
     <div class="home1-trusted-company mb-120">
