@@ -10,7 +10,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Total Members</p>
-                            <h4 class="mb-0 text-primary">{{$data['total_members']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-primary text-white">
                             <i class="bi bi-basket2-fill"></i>
@@ -25,7 +24,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Total Grooms</p>
-                            <h4 class="mb-0 text-success">{{$data['grooms']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-success text-white">
                             <i class="bi bi-currency-dollar"></i>
@@ -40,7 +38,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Total Brides</p>
-                            <h4 class="mb-0 text-danger"> {{$data['brides']}} </h4>
                         </div>
                         <div class="ms-auto widget-icon bg-danger text-white">
                             <i class="bi bi-graph-down-arrow"></i>
@@ -55,7 +52,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Membership Plans</p>
-                            <h4 class="mb-0 text-warning">{{$data['membership_plans']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-warning text-dark">
                             <i class="bi bi-people-fill"></i>
@@ -74,7 +70,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Plans Purchased Grooms</p>
-                            <h4 class="mb-0 text-primary">{{$data['plan_purchased_grooms']}}/{{$data['grooms']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-primary text-white">
                             <i class="bi bi-basket2-fill"></i>
@@ -89,7 +84,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Plans Purchased Brides</p>
-                            <h4 class="mb-0 text-success">{{$data['plan_purchased_brides']}}/{{$data['grooms']}}   </h4>
                         </div>
                         <div class="ms-auto widget-icon bg-success text-white">
                             <i class="bi bi-currency-dollar"></i>
@@ -104,7 +98,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Monthly Income</p>
-                            <h4 class="mb-0 text-danger"> &#8377; {{$data['current_month_earning']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-danger text-white">
                             <i class="bi bi-graph-down-arrow"></i>
@@ -119,7 +112,6 @@
                     <div class="d-flex align-items-center">
                         <div class="">
                             <p class="mb-1">Total Income</p>
-                            <h4 class="mb-0 text-warning">&#8377; {{$data['total_earning']}}</h4>
                         </div>
                         <div class="ms-auto widget-icon bg-warning text-dark">
                             <i class="bi bi-people-fill"></i>
@@ -149,16 +141,7 @@
                             </thead>
             
                             <tbody>
-                                @foreach ($data['plans'] as $key => $item)
-                                    <tr>
-                                        <td>{{ $key + 1 }}</td>
-                                        <td> {{ $item->name }} </td>
-                                        <td>{{ $item->plan_name }}</td>
-                                        <td> &#8377; {{ $item->price }}</td> 
-                                        <td>{{ $item->plan_start_date }}</td>
-                                        <td>{{ $item->plan_end_date }}</td>
-                                    </tr>
-                                @endforeach
+                                  
                             </tbody>
                         </table>
                 </div>
@@ -184,17 +167,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                          @foreach ($recentlyJoined as $key => $item)
-                              <tr>
-                                <td>{{$key + 1}}</td>
-                                <td>{{ $item->created_at->format('d-m-Y') }}</td>
-                                <td>{{$item->name}}</td>
-                                <td>{{$item->city_name}}</td>
-                                <td>{{$item->email}}</td>
-                                <td>{{$item->mobile}}</td>
-                                <td> <a href="/admin/member/show/{{$item->id}}" class="btn btn-primary btn-sm">View Profile</a> </td>
-                              </tr>
-                          @endforeach
                         </tbody>
                     </table>
                 </div>
