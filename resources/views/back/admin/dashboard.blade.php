@@ -75,14 +75,7 @@
                         <!-- ./col -->
 
                     </div>
-                    <!-- /.row -->
-                    <!-- Main row -->
-                    <div class="card">
-                        <div>
-                            <canvas id="myChart"></canvas>
-                        </div>
-                    </div>
-                    <!-- /.row (main row) -->
+
                 </div>
 
                 <!-- /.row (main row) -->
@@ -91,35 +84,6 @@
         </section>
         <!-- /.content -->
     </div>
-    <script>
-        const ctx = document.getElementById('myChart');
 
-        // Formatting the data from the Laravel code array
-        var data = {!! json_encode($data) !!};
-
-        // Extracting labels and data from the formatted data
-        var labels = data.map(item => item.job_category_name);
-        var counts = data.map(item => item.count);
-
-        // Setting up the chart
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: 'All Category Growth',
-                    data: counts,
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
     <!-- /.content-wrapper -->
 @endsection

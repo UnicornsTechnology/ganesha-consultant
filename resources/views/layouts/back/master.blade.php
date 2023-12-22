@@ -132,6 +132,18 @@
                                 </p>
                             </a>
                         </li>
+                        @if (Gate::check('/admin/settings/job-categories/list'))
+                            @can('/admin/settings/job-categories/list')
+                                <li class="nav-item">
+                                    <a href="/admin/settings/job-categories/list" class="nav-link">
+                                        <i class=" nav-icon fas fa-infinity"></i>
+                                        <p>
+                                            Job Categories
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                        @endif
                         @if (Gate::check('/admin/jobs/list') || Gate::check('/admin/job/create'))
                             <li class="nav-item">
                                 <a href="" class="nav-link">
@@ -161,7 +173,6 @@
                             </li>
                         @endif
                         @if (Gate::check('/admin/settings/job-title/list') ||
-                                Gate::check('/admin/settings/job-categories/list') ||
                                 Gate::check('/admin/settings/experience/list') ||
                                 Gate::check('/admin/settings/skills/list') ||
                                 Gate::check('/admin/settings/locations/list') ||
@@ -184,13 +195,7 @@
                                             </a>
                                         </li>
                                     @endcan
-                                    @can('/admin/settings/job-categories/list')
-                                        <li class="nav-item">
-                                            <a href="/admin/settings/job-categories/list" class="nav-link">
-                                                <p>&#8594; Job Categories</p>
-                                            </a>
-                                        </li>
-                                    @endcan
+
                                     @can('/admin/settings/experience/list')
                                         <li class="nav-item">
                                             <a href="/admin/settings/experience/list" class="nav-link">
