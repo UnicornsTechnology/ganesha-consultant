@@ -269,7 +269,7 @@
     @yield('content')
 
     <footer class="footer1">
-        <div class="container">
+        <div class="container mb-3">
             <div class="footer-btm">
                 <div class="footer-logo">
                     <img src="{{ asset('logo.png') }}" width="150px" height="100px" alt>
@@ -328,11 +328,9 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                    pageLanguage: "ma",
-                    // includedLanguages: "en,mr,hi",
-                },
-                "google_translate_element"
-            );
+                pageLanguage: 'en',
+                includedLanguages: "en,mr,hi",
+            }, 'google_translate_element');
         }
     </script>
     <script src="{{ asset('front_assets/js/jquery-3.6.0.min.js') }}"></script>

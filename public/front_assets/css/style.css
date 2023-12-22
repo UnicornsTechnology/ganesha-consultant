@@ -8009,7 +8009,7 @@ header.style-7 .main-menu ul li.menu-item-has-children>i {
 
 .footer1 {
     background: #1a1a1a;
-    padding-top: 90px
+    padding: 30px 0px;
 }
 
 .footer1.bg-dark {
@@ -8115,7 +8115,6 @@ header.style-7 .main-menu ul li.menu-item-has-children>i {
 }
 
 .footer1 .footer-btm {
-    padding-top: 90px;
     position: relative
 }
 

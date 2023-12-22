@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="form-wrapper shadow-lg">
+                    <div class="form-wrapper shadow-lg p-3">
                         <div class="form-title">
                             <h3>Log In Here!</h3>
                             <span></span>
@@ -32,8 +32,7 @@
                                         <label for="email">Email*</label>
                                         <div class="input-area">
                                             <img src="{{ asset('front_assets/images/icon/email-2.svg') }}" alt>
-                                            <input type="email" id="email"name="email"
-                                                placeholder="info@example.com">
+                                            <input type="email" id="email"name="email" placeholder="info@example.com">
                                         </div>
                                     </div>
                                 </div>
