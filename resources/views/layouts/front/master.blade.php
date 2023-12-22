@@ -65,7 +65,7 @@
 
     <header class="header-area style-1">
         <div class="header-main-logo d-lg-block d-none">
-            <a href="/"><img alt="image" src="{{ asset('logo.png') }}" width="200px" height="50px"></a>
+            <a href="/"><img alt="image" src="{{ asset('logo.png') }}" width="200px" height="100px"></a>
         </div>
         <div class="menu-topbar-area">
             <div class="top-bar">
