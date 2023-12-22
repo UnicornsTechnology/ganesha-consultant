@@ -46,17 +46,22 @@
                             <p><span>2400</span> Peoples are daily search in this portal, <span>100</span> user added job
                                 portal!</p>
                             <div class="job-search-area">
-                                <form>
+                                <form method="get" action="/job/search/list">
                                     <div class="form-inner job-title">
-                                        <input type="text" placeholder="What jobs are you looking for?">
+                                        <input type="text" name="key" placeholder="Job title, keywords"
+                                        list="job-options">
                                     </div>
+                                    <datalist id="job-options">
+                                        @foreach ($recentlyAdded as $item)
+                                            <option value="{{ $item->job_title_name }}">
+                                        @endforeach
+                                    </datalist>
                                     <div class="form-inner category">
-                                        <select class="select1">
-                                            <option value="0">Category</option>
-                                            <option value="1">UI/UX </option>
-                                            <option value="2">Closed</option>
-                                            <option value="4">Closed</option>
-                                            <option value="5">Closed</option>
+                                        <select class="select1" name="location">
+                                        <option>Select Location</option>
+                                        @foreach ($cities as $item)
+                                            <option>{{ $item->location_name }}</option>
+                                        @endforeach
                                         </select>
                                     </div>
                                     <div class="form-inner">
