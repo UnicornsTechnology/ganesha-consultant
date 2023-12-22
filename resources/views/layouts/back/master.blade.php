@@ -236,28 +236,7 @@
                                 </ul>
                             </li>
                         @endif
-                        @if (Gate::check('/admin/blog/list'))
-                            <li class="nav-item">
-                                <a href="" class="nav-link">
-                                    <i class=" nav-icon fas fa-users"></i>
-                                    <p>
-                                        Blog
-                                        <i class="fas fa-angle-left right"></i>
 
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    @can('/admin/blog/list')
-                                        <li class="nav-item">
-                                            <a href="/admin/blog/list" class="nav-link">
-                                                <p>&#8594; Blog List</p>
-                                            </a>
-                                        </li>
-                                    @endcan
-
-                                </ul>
-                            </li>
-                        @endif
                         @if (Gate::check('/admin/inquiry/list'))
                             @can('/admin/inquiry/list')
                                 <li class="nav-item">
@@ -341,57 +320,21 @@
                             </li>
                         @endif
                         @if (Gate::check('/admin/most_view/job'))
-                        @can('/admin/most_view/job')
-                            <li class="nav-item">
-                                <a href="/admin/most_view/job" class="nav-link">
-                                    <i class=" nav-icon fas fa-infinity"></i>
-                                    <p>
-                                        Report
-                                    </p>
-                                </a>
-                            </li>
-                        @endcan
-                    @endif
-
-
-                        @if (Gate::check('/admin/whatsapp/templates') ||
-                                Gate::check('/admin/whatsapp/send-messages') ||
-                                Gate::check('/admin/improt/index'))
-                            <li class="nav-item">
-                                <a href="" class="nav-link">
-                                    <i class=" nav-icon fab fa-whatsapp"></i>
-                                    <p>
-                                        Advertisement
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    @can('/admin/whatsapp/templates')
-                                        <li class="nav-item">
-                                            <a href="/admin/whatsapp/templates" class="nav-link">
-                                                <p>&#8594; Whatsapp Templates</p>
-                                            </a>
-                                        </li>
-                                    @endcan
-                                    @can('/admin/whatsapp/send-messages')
-                                        <li class="nav-item">
-                                            <a href="/admin/whatsapp/send-messages" class="nav-link">
-                                                <p>&#8594; Send Messages</p>
-                                            </a>
-                                        </li>
-                                    @endcan
-                                    @can('/admin/improt/index')
-                                        <li class="nav-item">
-                                            <a href="/admin/improt/index" class="nav-link">
-                                                <p>&#8594; Import Data</p>
-                                            </a>
-                                        </li>
-                                    @endcan
-
-                                </ul>
-                            </li>
+                            @can('/admin/most_view/job')
+                                <li class="nav-item">
+                                    <a href="/admin/most_view/job" class="nav-link">
+                                        <i class=" nav-icon fas fa-infinity"></i>
+                                        <p>
+                                            Report
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
                         @endif
-                        
+
+
+
+
                         <li class="nav-item">
                             <a href="/admin/profile" class="nav-link">
                                 <i class="nav-icon fas fa-box"></i>
@@ -409,12 +352,12 @@
 
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright © 2023 <a href="/" target="_blank">Hiretopskills Jobportal</a>.</strong>
+            <strong>Copyright © 2023 <a href="/" target="_blank">Ganesha Consultant</a>.</strong>
             All
             rights
             reserved.
             &nbsp; &nbsp; &nbsp;
-            Designed by <a href="https://www.ajspire.com" target="_blank">Ajspire Technologies Pvt. Ltd</a>
+            Designed by <a href="https://unicornstechnology.com/" target="_blank">Unicorns Technology</a>
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 1.0
             </div>

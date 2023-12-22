@@ -46,13 +46,7 @@ Route::middleware([
     Route::get('/admin/job/edit/{id}', [AdminJobController::class, 'edit']);
     Route::post('/admin/job/update/{id}', [AdminJobController::class, 'update']);
     Route::get('/admin/job/status/update/{type}/{id}', [AdminJobController::class, 'updateStatus']);
-    // ================================ BLOGG ROUTES ============================
-    Route::get('/admin/blog/list', [AdminBlogController::class, 'index']);
-    Route::get('/admin/blog/create', [AdminBlogController::class, 'create']);
-    Route::post('/admin/blog/store', [AdminBlogController::class, 'store']);
-    Route::get('/admin/blog/view/{id}', [AdminBlogController::class, 'show']);
-    Route::get('/admin/blog/edit/{id}', [AdminBlogController::class, 'edit']);
-    Route::post('/admin/blog/update', [AdminBlogController::class, 'update']);
+
     // ================================ Employee ROUTES ============================
     Route::get('/admin/employee/list', [EmployeeController::class, 'index']);
     Route::get('/admin/employee/create', [EmployeeController::class, 'create']);
@@ -86,15 +80,6 @@ Route::middleware([
     Route::get("/admin/student/applied-jobs/{id}", [AdminStudentsListController::class, 'studentAppliedJobs']);
     Route::get("/admin/student/bookmarks/{id}", [AdminStudentsListController::class, 'studentBookmarks']);
     Route::get("/admin/student/packages/{id}", [AdminStudentsListController::class, 'studentPackages']);
-
-    // WHATSAPP API ROUTES
-    Route::get("/admin/whatsapp/templates", [WhatsAppTemplatesController::class, 'index']);
-    Route::get("/admin/whatsapp/create-template", [WhatsAppTemplatesController::class, 'create']);
-    Route::post("/admin/whatsapp/store-template", [WhatsAppTemplatesController::class, 'store']);
-    Route::post("/admin/whatsapp/update-template", [WhatsAppTemplatesController::class, 'update']);
-
-    // SENDING MESSAGES
-    Route::get("/admin/whatsapp/send-messages", [WhatsAppTemplatesController::class, 'sendMessages']);
 });
 // ================================ Employee ROUTES ============================
 Route::post('/admin/contact/store', [EmployeeController::class, 'inquery']);
