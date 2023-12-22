@@ -55,7 +55,7 @@
                 <img src="{{ asset('admin/assets/images/logo-icon.png') }}" class="logo-img" alt="" />
             </div>
             <div class="logo-name flex-grow-1">
-                <h5 class="mb-0">Royal Marriage Bureau </h5>
+                <h5 class="mb-0">Ganesha Consultant </h5>
             </div>
             <div class="sidebar-close">
                 <span class="material-symbols-outlined">close</span>
