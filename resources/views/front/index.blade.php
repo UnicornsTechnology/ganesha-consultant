@@ -81,22 +81,22 @@
                         <div class="banner-image-area">
                             <div class="banner-img-left">
                                 <div class="banner-img1">
-                                    <img class="img-fluid" src="assets/images/bg/home2-banner-01.png" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-01.png') }}" alt>
                                 </div>
                                 <div class="banner-img2">
-                                    <img class="img-fluid" src="assets/images/bg/home2-banner-02.png" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-02.png') }}" alt>
                                 </div>
                             </div>
                             <div class="banner-img-center">
                                 <div class="banner-img3">
-                                    <img class="img-fluid" src="assets/images/bg/home2-banner-03.png" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-03.png') }}" alt>
                                 </div>
                                 <div class="banner-img4">
                                     <div class="user-area">
                                         <ul>
-                                            <li><img src="assets/images/bg/user31.png" alt></li>
-                                            <li><img src="assets/images/bg/user32.png" alt></li>
-                                            <li><img src="assets/images/bg/user33.png" alt></li>
+                                            <li><img src="{{ asset('front_assets/images/bg/user31.png') }}" alt></li>
+                                            <li><img src="{{ asset('front_assets/images/bg/user32.png') }}" alt></li>
+                                            <li><img src="{{ asset('front_assets/images/bg/user33.png') }}" alt></li>
                                             <li>
                                                 <div class="total-user">
                                                     <h6>21k</h6>
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="banner-img6">
-                                    <img class="img-fluid" src="assets/images/bg/home2-banner-04.png" alt>
+                                    <img class="img-fluid" src="{{ asset('front_assets/images/bg/home2-banner-04.png') }}" alt>
                                 </div>
                             </div>
                         </div>
