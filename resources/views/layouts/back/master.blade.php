@@ -137,7 +137,7 @@
                                 <a href="" class="nav-link">
                                     <i class="nav-icon fa fas fa-address-card"></i>
                                     <p>
-                                        Jobs Data
+                                        Jobs Create
                                         <i class="fas fa-angle-left right"></i>
 
                                     </p>
