@@ -272,7 +272,7 @@
         <div class="container mb-3">
             <div class="footer-btm">
                 <div class="footer-logo">
-                    <img src="{{ asset('logo.png') }}" width="150px" height="100px" alt>
+                    <img src="{{ asset('logo.png') }}" width="200px" height="80px" alt>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
@@ -301,8 +301,8 @@
                 <div class="row border-top align-items-center">
                     <div class="col-lg-6 d-flex  justify-content-lg-start justify-content-center">
                         <div class="copyright-area">
-                            <p>©Copyright 2023 <a href="#">HireTop</a> | Design By <a
-                                    href="https://ajspire.com/" target="_blank">Ajspire Technologies Pvt. Ltd.</a></p>
+                            <p>©Copyright 2023 <a href="#">HireTop</a> | Design By <a href="#"
+                                    target="_blank">... Pvt. Ltd.</a></p>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
