@@ -337,7 +337,32 @@
                             @endcan
                         @endif
 
+                        <li class="nav-item">
+                            <a href="/admin/career-at-gc" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>
+                                    Career At GC
+                                </p>
+                            </a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a href="/admin/job-provider" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>
+                                    Job Provider
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/admin/job-seeker" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>
+                                    Job Seeker
+                                </p>
+                            </a>
+                        </li>
 
 
                         <li class="nav-item">

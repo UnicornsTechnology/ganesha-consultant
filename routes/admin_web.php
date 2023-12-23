@@ -80,6 +80,11 @@ Route::middleware([
     Route::get("/admin/student/applied-jobs/{id}", [AdminStudentsListController::class, 'studentAppliedJobs']);
     Route::get("/admin/student/bookmarks/{id}", [AdminStudentsListController::class, 'studentBookmarks']);
     Route::get("/admin/student/packages/{id}", [AdminStudentsListController::class, 'studentPackages']);
+
+    // ================================== ADMIN JOB SEEKING, CAREER, PROVIDER ROUETS ========
+    Route::get("/admin/career-at-gc", [AdminHomeController::class, 'career']);
+    Route::get("/admin/job-provider", [AdminHomeController::class, 'jobProvider']);
+    Route::get("/admin/job-seeker", [AdminHomeController::class, 'jobSeeker']);
 });
 // ================================ Employee ROUTES ============================
 Route::post('/admin/contact/store', [EmployeeController::class, 'inquery']);

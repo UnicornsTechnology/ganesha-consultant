@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Career;
 use App\Models\JobCategory;
+use App\Models\JobProvider;
 use App\Models\Jobs;
+use App\Models\JobSeeker;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -57,5 +60,22 @@ class AdminHomeController extends Controller
         $admin->user_type = 'admin';
         $admin->save();
         return redirect()->back()->with('msg', 'Admin Update Successfully !');
+    }
+
+    public function career()
+    {
+        $career = Career::all();
+        return view("back/admin/job_seeking/career", compact('career'));
+    }
+
+    public function jobProvider()
+    {
+        $jobProvider = JobProvider::all();
+        return view("back/admin/job_seeking/job_provider", compact('jobProvider'));
+    }
+    public function jobSeeker()
+    {
+        $jobSeeker = JobSeeker::all();
+        return view("back/admin/job_seeking/job_seeker", compact('jobSeeker'));
     }
 }
