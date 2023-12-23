@@ -4,6 +4,7 @@ namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use App\Models\Career;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\JobCategory;
@@ -237,5 +238,37 @@ class HomeController extends Controller
     {
         $emp = tbl_employee_profile::where('isActive', 'active')->get();
         return view("front/employee_profile", compact('emp'));
+    }
+
+    public function careerAtGC()
+    {
+        return view("front.career_at_gc");
+    }
+
+    public function storeCareerForm(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'mobile' => 'required|string|max:15',
+            'address' => 'required|string|max:255',
+            'gender' => 'required|in:male,female,other',
+            'dob' => 'required|date',
+        ]);
+
+        // Create a new Job instance in the database
+        $job = Career::create($validatedData);
+
+        return redirect()->back()->with('msg', "Thanks for showing interest in Ganesha Consultant");
+    }
+
+    public function jobProvider()
+    {
+        return view("front.job_provider");
+    }
+
+    public function jobSeeker()
+    {
+        return view("front.job_seeker");
     }
 }

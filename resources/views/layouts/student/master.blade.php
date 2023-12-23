@@ -700,6 +700,6 @@
     <script src="{{ asset('front_assets/js/main.js') }}"></script>
 </body>
 
-<!-- Mirrored from demo-egenslab.b-cdn.net/html/jobes/preview/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 06:32:17 GMT -->
+<!-- Mirrored from demo-egenslab.b-cdn.net/html/jobes/preview// by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 06:32:17 GMT -->
 
 </html>

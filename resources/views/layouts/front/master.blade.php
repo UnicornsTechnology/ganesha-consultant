@@ -103,9 +103,9 @@
                     <ul class="menu-list">
                         <li><a href="/">Home</a></li>
                         <li><a href="/jobs-list">Find Jobs</a></li>
-                        <li><a href="/blog">Career At GC</a></li>
-                        <li><a href="/about-us">Job Provider</a></li>
-                        <li><a href="/about-us">Job Seeker</a></li>
+                        <li><a href="/career-at-gc">Career At GC</a></li>
+                        <li><a href="/job-provider">Job Provider</a></li>
+                        <li><a href="/job-seeker">Job Seeker</a></li>
                         <li><a href="/contact-us">Contact Us</a></li>
                     </ul>
                     <div class="for-mobile-menu d-lg-none d-block">
@@ -349,6 +349,6 @@
     <script src="{{ asset('front_assets/js/main.js') }}"></script>
 </body>
 
-<!-- Mirrored from demo-egenslab.b-cdn.net/html/jobes/preview/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 06:32:17 GMT -->
+<!-- Mirrored from demo-egenslab.b-cdn.net/html/jobes/preview// by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 06:32:17 GMT -->
 
 </html>
