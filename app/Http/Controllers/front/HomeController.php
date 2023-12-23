@@ -8,7 +8,9 @@ use App\Models\Career;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\JobCategory;
+use App\Models\JobProvider;
 use App\Models\Jobs;
+use App\Models\JobSeeker;
 use App\Models\JobType;
 use App\Models\Location;
 use App\Models\Packages;
@@ -264,11 +266,71 @@ class HomeController extends Controller
 
     public function jobProvider()
     {
-        return view("front.job_provider");
+        $categories = JobCategory::all();
+        return view("front.job_provider", compact('categories'));
+    }
+
+    public function storeJobProviderForm(Request $request)
+    {
+        // Validation rules for the form fields
+        $validatedData = $request->validate([
+            'owner_name' => 'required|string|max:255',
+            'job_role' => 'required|string|max:255',
+            'job_category' => 'required|string|max:255',
+            'institute_name' => 'required|string|max:255',
+            'qualification_needed' => 'required|string|max:255',
+            'experience_needed' => 'required|string|max:255',
+            'monthly_salary' => 'required|numeric',
+            'selection_process' => 'required|string|max:255',
+            'job_location' => 'required|string|max:255',
+            'mobile_number' => 'required|string|max:15',
+            'requirement' => 'required|string',
+            'description' => 'required|string',
+        ]);
+
+        // Create a new Job instance in the database
+        JobProvider::create($validatedData);
+
+        return redirect()->back()->with('msg', "Your response has been stored !");
     }
 
     public function jobSeeker()
     {
         return view("front.job_seeker");
+    }
+
+    public function storeJobSeekerForm(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'mobile_number' => 'required',
+            'whatsapp_number' => 'required',
+            'date_of_birth' => 'required|date',
+            'industry' => 'required|string',
+            'job_title' => 'required|string',
+            'total_experience' => 'required',
+            'highest_qualification' => 'required|string',
+            'current_salary' => 'required',
+            'country' => 'required|string',
+            'state' => 'required|string',
+            'city' => 'required|string',
+            'complete_address' => 'required|string',
+            'upload_resume' => 'required|mimes:pdf|max:2048',
+            'upload_aadhar' => 'required|mimes:pdf|max:2048',
+        ]);
+
+        // Handle file uploads
+        $uploadResumePath = $request->file('upload_resume')->store('uploads/resumes', 'public');
+        $uploadAadharPath = $request->file('upload_aadhar')->store('uploads/aadhar', 'public');
+
+        // Add file paths to the validated data
+        $validatedData['upload_resume'] = $uploadResumePath;
+        $validatedData['upload_aadhar'] = $uploadAadharPath;
+
+        // Create a new PersonalInfo instance and fill it with the validated data
+        JobSeeker::create($validatedData);
+
+        return redirect()->back()->with('msg', 'Your response has been stored');
     }
 }

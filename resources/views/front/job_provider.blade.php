@@ -43,79 +43,128 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="POST" action="/career-at-gc/store">
+                    <form method="POST" action="/job-provider/store">
                         @csrf
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-title2">
-                                    <h5>Personal Information:</h5>
+                                    <h5>Job Information:</h5>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-inner mb-25">
-                                    <label for="name">Your Name*</label>
+                                    <label for="owner_name">Owner Name*</label>
                                     <div class="input-area">
-                                        <img src="assets/images/icon/user-2.svg" alt="">
-                                        <input type="text" id="name" value="{{old('name')}}" name="name" placeholder="Your Name">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">   
+                                        <input type="text" id="owner_name" value="{{ old('owner_name') }}" name="owner_name" placeholder="Owner Name" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-inner mb-25">
-                                    <label for="email">Email*</label>
+                                    <label for="job_role">Job Role*</label>
                                     <div class="input-area">
-                                        <img src="assets/images/icon/email-2.svg" alt="">
-                                        <input type="email" id="email" value="{{old('email')}}" name="email" placeholder="your@example.com">
+                                        <img src="{{asset('front_assets/images/icon/category.svg')}}" alt="">
+                                        <input type="text" id="job_role" value="{{ old('job_role') }}" name="job_role" placeholder="Job Role" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-inner mb-25">
-                                    <label for="mobile">Your Mobile No.*</label>
+                                    <label for="job_category">Job Category*</label>
                                     <div class="input-area">
-                                        <img src="assets/images/icon/mobile-2.svg" alt="">
-                                        <input type="tel" id="mobile" value="{{old('mobile')}}" name="mobile" placeholder="xxxx-xx-xxxx">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-inner mb-25">
-                                    <label for="address">Address*</label>
-                                    <div class="input-area">
-                                        <img src="assets/images/icon/location-2.svg" alt="">
-                                        <input type="text" id="address" value="{{old('address')}}" name="address" placeholder="Your Address">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-inner mb-25">
-                                    <label for="gender">Gender*</label>
-                                    <div class="input-area">
-                                        <img src="assets/images/icon/gender-2.svg" alt="">
-                                        <select class="select1" id="gender" value="{{old('gender')}}" name="gender">
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                            <option value="other">Other</option>
+                                        <img src="{{asset('front_assets/images/icon/category-2.svg')}}" alt="">
+                                        <select name="job_category" id="" class=" select1">
+                                            @foreach ($categories as $item)
+                                                <option value="{{$item->job_category_id}}">{{$item->job_category_name}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-inner mb-25">
-                                    <label for="dob">Date of Birth*</label>
+                                    <label for="institute_name">Name of Institute*</label>
                                     <div class="input-area">
-                                        <img src="assets/images/icon/calendar-2.svg" alt="">
-                                        <input type="date" id="dob" value="{{old('dob')}}" name="dob" placeholder="MM/DD/YYYY">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="institute_name" value="{{ old('institute_name') }}" name="institute_name" placeholder="Name of Institute" required>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="qualification_needed">Qualification Needed*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="qualification_needed" value="{{ old('qualification_needed') }}" name="qualification_needed" placeholder="Qualification Needed" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="experience_needed">Experience Needed*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="experience_needed" value="{{ old('experience_needed') }}" name="experience_needed" placeholder="Experience Needed" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="monthly_salary">Monthly Salary*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="monthly_salary" value="{{ old('monthly_salary') }}" name="monthly_salary" placeholder="Monthly Salary" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="selection_process">Process of Selections*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="selection_process" value="{{ old('selection_process') }}" name="selection_process" placeholder="Selection Process" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="job_location">Job Location*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="text" id="job_location" value="{{ old('job_location') }}" name="job_location" placeholder="Job Location" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-inner mb-25">
+                                    <label for="mobile_number">Your Mobile No.*</label>
+                                    <div class="input-area">
+                                        <img src="{{asset('front_assets/images/icon/company-2.svg')}}" alt="">
+                                        <input type="tel" id="mobile_number" value="{{ old('mobile_number') }}" name="mobile_number" placeholder="xxxx-xx-xxxx" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-inner mb-30">
+                                    <label for="requirement">Requirement*</label>
+                                    <textarea name="requirement" id="requirement" placeholder="Greeting from TKL Consultancy! Put your requirement over here please." required>{{ old('requirement') }}</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-inner mb-30">
+                                    <label for="description">Description*</label>
+                                    <textarea name="description" id="description" placeholder="Description" required>{{ old('description') }}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-inner">
                                     <button class="primry-btn-2 lg-btn w-unset" type="submit">Post Now</button>
                                 </div>
-                            </div>                 
+                            </div>
                         </div>
                     </form>
+                    
                      </div>
             </div>
         </div>
