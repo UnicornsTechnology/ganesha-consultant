@@ -320,7 +320,6 @@ class HomeController extends Controller
             'upload_aadhar' => 'required|mimes:pdf|max:2048',
         ]);
 
-        // Handle file uploads
         $uploadResumePath = $request->file('upload_resume')->store('uploads/resumes', 'public');
         $uploadAadharPath = $request->file('upload_aadhar')->store('uploads/aadhar', 'public');
 

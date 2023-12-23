@@ -85,6 +85,10 @@ Route::middleware([
     Route::get("/admin/career-at-gc", [AdminHomeController::class, 'career']);
     Route::get("/admin/job-provider", [AdminHomeController::class, 'jobProvider']);
     Route::get("/admin/job-seeker", [AdminHomeController::class, 'jobSeeker']);
+
+    Route::get('/admin/delete/career/{id}', [AdminHomeController::class, 'deleteCareer']);
+    Route::get('/admin/delete/job-provider/{id}', [AdminHomeController::class, 'deleteJobProvider']);
+    Route::get('/admin/delete/job-seeker/{id}', [AdminHomeController::class, 'deleteJobSeeker']);
 });
 // ================================ Employee ROUTES ============================
 Route::post('/admin/contact/store', [EmployeeController::class, 'inquery']);

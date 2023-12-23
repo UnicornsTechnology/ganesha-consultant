@@ -58,6 +58,7 @@
                                                     <th>Complete Address</th>
                                                     <th>Resume</th>
                                                     <th>Aadhar</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -78,8 +79,18 @@
                                                 <td>{{ $item->state }}</td>
                                                 <td>{{ $item->city }}</td>
                                                 <td>{{ $item->complete_address }}</td>
-                                                <td>{{ $item->upload_resume }}</td>
-                                                <td>{{ $item->upload_aadhar }}</td>
+                                                <td>
+                                                    <a href="/storage/{{$item->upload_resume}}" target="_blank">
+                                                        <span class="badge badge-primary">View</span>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="/storage/{{$item->upload_aadhar}}" target="_blank">
+                                                        <span class="badge badge-primary">View</span>
+                                                    </a>
+                                                </td>
+                                                
+                                                <td> <a href="/admin/delete/job-seeker/{{$item->job_seeker_id}}" class="btn btn-danger btn-sm">Delete</a> </td>
                                                 </tr>
                                                 @endforeach
 

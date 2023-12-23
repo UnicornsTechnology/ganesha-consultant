@@ -62,7 +62,7 @@
                                                     <td>{{ $item->address }}</td>
                                                     <td>{{ $item->dob }}</td>
                                                     <td>
-                                                        <a href="/inquiry/delete/{{ $item->id }}" class="btn btn-danger btn-sm">Delete</a>
+                                                        <a href="/admin/delete/career/{{ $item->career_id }}" class="btn btn-danger btn-sm">Delete</a>
                                                     </td>
                                                 </tr>
                                                 @endforeach

@@ -67,15 +67,40 @@ class AdminHomeController extends Controller
         $career = Career::all();
         return view("back/admin/job_seeking/career", compact('career'));
     }
+    public function deleteCareer($id)
+    {
+        $career = Career::findOrFail($id);
+        $career->delete();
+
+        return redirect()->back()->with('msg', 'Career record deleted successfully.');
+    }
+
 
     public function jobProvider()
     {
         $jobProvider = JobProvider::all();
         return view("back/admin/job_seeking/job_provider", compact('jobProvider'));
     }
+
+    public function deleteJobProvider($id)
+    {
+        $jobProvider = JobProvider::findOrFail($id);
+        $jobProvider->delete();
+
+        return redirect()->back()->with('msg', 'JobProvider record deleted successfully.');
+    }
+
     public function jobSeeker()
     {
         $jobSeeker = JobSeeker::all();
         return view("back/admin/job_seeking/job_seeker", compact('jobSeeker'));
+    }
+
+    public function deleteJobSeeker($id)
+    {
+        $jobSeeker = JobSeeker::findOrFail($id);
+        $jobSeeker->delete();
+
+        return redirect()->back()->with('msg', 'JobSeeker record deleted successfully.');
     }
 }

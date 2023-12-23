@@ -74,7 +74,7 @@
                                                     <td>{{ $item->requirement }}</td>
                                                     <td>{{ $item->description }}</td>
                                                     <td>
-                                                        <a href="/career/delete/{{ $item->job_provider_id }}" class="btn btn-danger btn-sm">Delete</a>
+                                                        <a href="/admin/delete/job-provider/{{ $item->job_provider_id }}" class="btn btn-danger btn-sm">Delete</a>
                                                     </td>
                                                 </tr>
                                                 @endforeach
