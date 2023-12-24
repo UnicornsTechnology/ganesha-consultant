@@ -94,7 +94,7 @@ class HomeController extends Controller
                 ->join("locations", "locations.location_id", "jobs.job_location_id")
                 ->join("job_types", "job_types.job_type_id", "jobs.job_type_id")
                 ->join("experiences", "experiences.experiences_id", "jobs.job_experience_id")
-                ->where('locations.location_name', "LIKE", "%{$request->location}%")
+                ->orWhere('locations.location_name', "LIKE", "%{$request->location}%")
                 ->where('job_titles.job_title_name', "LIKE", "%{$request->key}%")
                 ->orWhere('company_names.company_name', "LIKE", "%{$request->key}%")
                 ->where('job_titles.job_category_ids', 'LIKE', '%' . Auth::user()->job_category__id . '%')
@@ -105,7 +105,7 @@ class HomeController extends Controller
                 ->join("locations", "locations.location_id", "jobs.job_location_id")
                 ->join("job_types", "job_types.job_type_id", "jobs.job_type_id")
                 ->join("experiences", "experiences.experiences_id", "jobs.job_experience_id")
-                ->where('locations.location_name', "LIKE", "%{$request->location}%")
+                ->orWhere('locations.location_name', "LIKE", "%{$request->location}%")
                 ->where('job_titles.job_title_name', "LIKE", "%{$request->key}%")
                 ->orWhere('company_names.company_name', "LIKE", "%{$request->key}%")
                 ->paginate(10);
@@ -221,7 +221,15 @@ class HomeController extends Controller
     }
     public function termsAndConditions()
     {
-        return view("front/index");
+        return view("front/terms_and_conditions");
+    }
+    public function refundPolicy()
+    {
+        return view("front/refund_policy");
+    }
+    public function faq()
+    {
+        return view("front/faq");
     }
     public function packages()
     {
@@ -230,7 +238,7 @@ class HomeController extends Controller
     }
     public function privacyAndPolicy()
     {
-        return view("front/index");
+        return view("front/privacy_policy");
     }
     public function contact()
     {

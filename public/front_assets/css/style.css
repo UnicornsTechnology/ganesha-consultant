@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -65,6 +65,10 @@ html {
     html {
         font-size: 88%
     }
+}
+
+h5 {
+    font-family: var(--font-work-sans);
 }
 
 body {
@@ -22355,7 +22359,8 @@ header.style-7 .main-menu ul li.menu-item-has-children>i {
     line-height: 1
 }
 
-.hero5 .hero-left .suggest-tag ul li a {
+.hero5 .hero-left .suggest-tag ul li a,
+h5 {
     font-family: var(--font-work-sans);
     font-weight: 400;
     font-size: .875rem;

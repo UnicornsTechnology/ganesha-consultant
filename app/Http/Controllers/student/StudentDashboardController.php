@@ -48,12 +48,12 @@ class StudentDashboardController extends Controller
         if (!$student) {
             $student = [];
         }
-        return view("student/profile/show_profile", compact('student','user','categories'));
+        return view("student/profile/show_profile", compact('student', 'user', 'categories'));
     }
- 
+
     public function profileUpdate(Request $request)
     {
-         $request;
+        $request;
         $student = User::find($request->id);
         $student->name = $request->full_name;
         $student->mobile_number = $request->mobile_number;
@@ -61,11 +61,11 @@ class StudentDashboardController extends Controller
         $student->city = $request->city;
         $student->job_category__id = $request->job_category_id;
         $student->email = $request->email;
-        if($student->password != null){
+        if ($student->password != null) {
             // $student->password = Hash::make($request->password);
         }
         $student->save();
-        return redirect("/student/profile")->with("msg",'Profile Updated');
+        return redirect("/student/profile")->with("msg", 'Profile Updated');
     }
     // public function profileUpdate(Request $request)
     // {

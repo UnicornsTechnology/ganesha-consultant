@@ -40,24 +40,25 @@
                 <div class="col-lg-6">
                     <div class="contect-content">
                         <h4>Need Any Help? Contact Us</h4>
-                        <p>
-                            Alternatively you can also check for the Company email, phone
-                            number and address in the official website.
-                        </p>
                         <div class="support">
                             <div class="icon">
                                 <img src="{{ asset('front_assets/images/icon/footer-support-icon.svg') }}" alt />
                             </div>
                             <div class="content">
                                 <h5>Support Line:</h5>
-                                <a href="tel:+099-03573983465">+099-035 7398 3465</a>
+                                <a href="tel:+9588491969
+                                9209914441">+9588491969 /
+                                    9209914441</a>
                             </div>
                         </div>
-                        <div class="service-available">
-                            <span>N:B</span>
+                        <div class="">
+                            <span class="fw-bold">Email</span>
                             <p>
-                                Our Customer Service Available from 9 am to 6 pm (Saturday to
-                                Thursday)
+                                ganesha.consultant22@gmail.com
+                            </p>
+                            <span class="fw-bold">Address</span>
+                            <p>
+                                Near Z P School, Chincholi, Daund, Pune, 413130
                             </p>
                         </div>
                     </div>

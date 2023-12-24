@@ -3,7 +3,7 @@
     Job Portal
 @endsection
 @section('content')
-    {{-- <?php
+<?php
     function ago($timestamp)
     {
         $elapsed = time() - strtotime($timestamp);
@@ -35,7 +35,8 @@
         return $count . ' ' . $unit . $suffix . ' ago';
     }
     
-    ?> --}}
+    ?>
+
     <div class="hero2">
         <div class="hero-wapper">
             <div class="container-fluid px-0">
@@ -58,7 +59,7 @@
                                     </datalist>
                                     <div class="form-inner category">
                                         <select class="select1" name="location">
-                                            <option>Select Location</option>
+                                         
                                             @foreach ($cities as $item)
                                                 <option>{{ $item->location_name }}</option>
                                             @endforeach
@@ -71,7 +72,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="suggest-tag">
+                            {{-- <div class="suggest-tag">
                                 <h6><i class="bi bi-bookmark-fill"></i>Suggested Tag:</h6>
                                 <ul>
                                     <li><a href="job-listing1.html">Engineering,</a></li>
@@ -80,7 +81,7 @@
                                     <li><a href="job-listing1.html">Data Analyst,</a></li>
                                     <li><a href="job-listing1.html">Programming</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="col-lg-5 d-flex jsutify-content-end">
@@ -138,8 +139,8 @@
 
     <div class="counter-area home2-counter-area mb-120">
         <div class="container">
-            <div class="row g-lg-4 gy-5 justify-content-center">
-                <div class="col-lg-3 col-sm-6 divider d-flex justify-content-center">
+            <div class="row">
+                <div class="col-6 my-3 col-lg-3 col-sm-6 divider d-flex justify-content-center">
                     <div class="counter-single">
                         <div class="counter-icon">
                             <div class="icon-bg">
@@ -382,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 divider d-flex justify-content-center">
+                <div class="col-6 my-3 col-lg-3 col-sm-6 divider d-flex justify-content-center">
                     <div class="counter-single">
                         <div class="counter-icon">
                             <div class="icon-bg">
@@ -654,7 +655,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 divider d-flex justify-content-center">
+                <div class="col-6 my-3 col-lg-3 col-sm-6 divider d-flex justify-content-center">
                     <div class="counter-single">
                         <div class="counter-icon">
                             <div class="icon-bg">
@@ -896,7 +897,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 d-flex justify-content-center">
+                <div class="col-6 my-3 col-lg-3 col-sm-6 d-flex justify-content-center">
                     <div class="counter-single">
                         <div class="counter-icon">
                             <div class="icon-bg">
@@ -1189,18 +1190,19 @@
         </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="single-category2">
-            <div class="category-icon">
-            <div class="icon-bg">
-        <div class="category-content">
-            <h5><a href="job-listing1.html">Electrician/Repair</a></h5>
-            <p>Job Available: <span>88</span></p>
-            </div>
-        </div>
-    </div>
+   <div class="row">
+    
+    @foreach ($categories as $item)
+    <div class="col-xl-3 col-lg-3 col-sm-6 text-center my-3">
+      <div class="card">
+        <br/>
+        <img src="{{ asset('front_assets/images/icon/company-2.svg') }}" height="20">
+        <hr/>
+        <p>{{$item->job_category_name}}</p>
+      </div>
 </div>
-</div>
+    @endforeach
+   </div>
     </div>
 </div>
     <div class="home1-featured-area mb-120">
@@ -1371,7 +1373,7 @@
         </div>
         <div class="working-process-content">
         <h5><a href="edit-profile.html">Create Resume</a></h5>
-        <p>To create your account be confident & safely.</p>
+        <p>Create reasume that will make you stand out.</p>
         </div>
         </div>
         </div>
@@ -1383,7 +1385,7 @@
         </div>
         <div class="working-process-content">
         <h5><a href="job-listing1.html">Find Jobs</a></h5>
-        <p>To create your account be confident & safely.</p>
+        <p>Find the job wherever you want.</p>
         </div>
         </div>
         </div>
@@ -1395,7 +1397,7 @@
         </div>
         <div class="working-process-content">
         <h5><a href="job-listing1.html">Apply Jobs</a></h5>
-        <p>To create your account be confident & safely.</p>
+        <p>Apply for any job that you love to do.</p>
         </div>
         </div>
         </div>
@@ -1464,6 +1466,26 @@
 
     <div class="home1-location-area mb-120">
         <div class="container">
+            <div class="row">
+                <div
+                    class="col-12 d-flex flex-wrap align-items-end justify-content-md-between justify-content-start gap-3">
+                    <div class="section-title1">
+                        <h2>About Our<span>   Consultancy</span></h2>
+                        <p>Know more about Ganesha Consultant</p>
+                    </div>
+                    <div>
+                        <h1>About Ganesha Consultant</h1>
+                        <p>At Ganesha Consultant, we believe in unlocking the full potential of individuals by connecting them with opportunities that align with their skills and aspirations. Our platform is more than just a job portal; it's a dynamic space dedicated to empowering professionals on their journey to success. By fostering meaningful connections between talented individuals and forward-thinking companies, we pave the way for career growth and fulfillment. Committed to excellence, we provide a personalized experience, ensuring that every user's career trajectory is uniquely supported. Join us at Ganesha Consultant, where your career ambitions find the perfect launchpad for success.
+                            
+                        </p>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home1-location-area mb-120">
+        <div class="container">
             <div class="row mb-60">
                 <div
                     class="col-12 d-flex flex-wrap align-items-end justify-content-md-between justify-content-start gap-3">
@@ -1492,7 +1514,7 @@
                                 <div class="location-content text-center">
                                     <h5><a href="job-listing1.html"><img
                                                 src="{{ asset('front_assets/images/icon/location.svg') }}" alt>
-                                            Bangladesh</a></h5>
+                                            Pune</a></h5>
 
                                 </div>
                             </div>
@@ -1505,7 +1527,7 @@
                                 <div class="location-content text-center">
                                     <h5><a href="job-listing1.html"><img
                                                 src="{{ asset('front_assets/images/icon/location.svg') }}" alt>
-                                            USA</a></h5>
+                                          Banglore</a></h5>
 
                                 </div>
                             </div>
@@ -1518,7 +1540,7 @@
                                 <div class="location-content text-center">
                                     <h5><a href="job-listing1.html"><img
                                                 src="{{ asset('front_assets/images/icon/location.svg') }}" alt>
-                                            Australia</a></h5>
+                                            Mumbai</a></h5>
 
                                 </div>
                             </div>
@@ -1530,7 +1552,7 @@
                                 </div>
                                 <div class="location-content text-center">
                                     <h5><a href="job-listing1.html"><img
-                                                src="{{ asset('front_assets/images/icon/location.svg') }}" alt>India
+                                                src="{{ asset('front_assets/images/icon/location.svg') }}" alt>Delhi
                                         </a></h5>
 
                                 </div>

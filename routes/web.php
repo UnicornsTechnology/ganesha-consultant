@@ -41,6 +41,8 @@ Route::post('/job-seeker/store', [HomeController::class, 'storeJobSeekerForm']);
 Route::get('/contact-us', [HomeController::class, 'contact']);
 Route::get('/terms-and-conditions', [HomeController::class, 'termsAndConditions']);
 Route::get('/privacy-policy', [HomeController::class, 'privacyAndPolicy']);
+Route::get('/refund-policy', [HomeController::class, 'privacyAndPolicy']);
+Route::get("/faq", [HomeController::class, 'faq']);
 Route::get("/student/login", [AuthController::class, 'login']);
 Route::get("/student/register", [AuthController::class, 'register']);
 Route::post("/student/register", [AuthController::class, 'registerStudent']);

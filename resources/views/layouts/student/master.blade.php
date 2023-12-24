@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HireTop Skill | @yield('title') </title>
-    <link rel="icon" href="{{ asset('favicon.jpg') }}" type="image/gif" sizes="20x20">
+    <title> Ganesha Consultant | @yield('title') </title>
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/gif" sizes="20x20">
 
     <link rel="stylesheet" href="{{ asset('front_assets/css/all.css') }}">
 

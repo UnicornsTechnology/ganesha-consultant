@@ -55,7 +55,6 @@
                                 </div>
                                 <div class="form-inner category">
                                     <select class="select1" name="location">
-                                        <option>Select Location</option>
                                         @foreach ($cities as $item)
                                             <option>{{ $item->location_name }}</option>
                                         @endforeach

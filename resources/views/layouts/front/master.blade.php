@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HireTop Skill | @yield('title') </title>
-    <link rel="icon" href="{{ asset('favicon.jpg') }}" type="image/gif" sizes="20x20">
+    <title> Ganesha Consultant | @yield('title') </title>
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/gif" sizes="20x20">
 
     <link rel="stylesheet" href="{{ asset('front_assets/css/all.css') }}">
 
@@ -275,25 +275,41 @@
                     <img src="{{ asset('logo.png') }}" width="200px" height="80px" alt>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center">
+                    <div class="col-lg-6 ">
                         <div class="support">
                             <div class="icon">
                                 <img src="{{ asset('front_assets/images/icon/footer-support-icon.svg') }}" alt>
                             </div>
-                            <div class="content">
-                                <h5>Support Line:</h5>
-                                <a href="tel:+099-03573983465">+099-035 7398 3465</a>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="content">
+                                        <h5>Contact :</h5>
+                                        <a href="#">+9588491969 /
+                                            9209914441</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="content">
+                                        <h5>Address :</h5>
+                                        <a href="#">Near Z P School, Chincholi, Daund, Pune, 413130</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="content">
+                                        <h5>Email :</h5>
+                                        <a href="#">ganesha.consultant22@gmail.com</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
                         <div class="footer-btm-menu">
                             <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Services</a></li>
-                                <li><a
-                                        href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3634979,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866">Our
-                                        Sitemap</a></li>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+                                <li><a href="/refund-policy">Refund Policy</a></li>
+                                <li><a href="/faq">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
