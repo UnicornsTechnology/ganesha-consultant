@@ -296,7 +296,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="content">
-                                        <h5>Email :</h5>
+                                        <h5>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </h5>
                                         <a href="#">ganesha.consultant22@gmail.com</a>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@
                 <div class="row border-top align-items-center">
                     <div class="col-lg-6 d-flex  justify-content-lg-start justify-content-center">
                         <div class="copyright-area">
-                            <p>©Copyright 2023 <a href="#">HireTop</a> | Design By <a href="#"
+                            <p>©Copyright 2023 <a href="#">Ganesha Consultant</a> | Design By <a href="#"
                                     target="_blank">... Pvt. Ltd.</a></p>
                         </div>
                     </div>

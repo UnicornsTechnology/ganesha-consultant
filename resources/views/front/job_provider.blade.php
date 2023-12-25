@@ -1,7 +1,7 @@
 @extends('layouts.front.master')
 
 @section('title')
-    Career At GC
+Job Provider
 @endsection
 @section('content')
 <div class="inner-banner">
@@ -148,7 +148,7 @@
                             <div class="col-md-12">
                                 <div class="form-inner mb-30">
                                     <label for="requirement">Requirement*</label>
-                                    <textarea name="requirement" id="requirement" placeholder="Greeting from TKL Consultancy! Put your requirement over here please." required>{{ old('requirement') }}</textarea>
+                                    <textarea name="requirement" id="requirement" placeholder="Greeting from Ganesha Consultant! Put your requirement over here please." required>{{ old('requirement') }}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
